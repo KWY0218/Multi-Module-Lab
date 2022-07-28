@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -47,15 +49,20 @@ dependencies {
 
     KotlinDependencies.run {
         implementation(kotlin)
+        implementation(coroutine)
     }
 
-    KtxDependencies.run {
-        implementation(coreKtx)
+    KTXDependencies.run {
+        implementation(coreKTX)
+        implementation(activityKTX)
+        implementation(fragmentKTX)
+        implementation(lifecycleKTX)
     }
 
     AndroidXDependencies.run {
         implementation(appCompat)
         implementation(constraintLayout)
+        implementation(hilt)
     }
 
     MaterialDependencies.run {
@@ -66,5 +73,14 @@ dependencies {
         implementation(jUnit)
         implementation(androidTest)
         implementation(espresso)
+    }
+
+    KaptDependencies.run {
+        implementation(hiltKapt)
+    }
+
+    ThirdPartyDependencies.run {
+        implementation(coil)
+        implementation(timber)
     }
 }

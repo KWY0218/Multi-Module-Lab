@@ -30,8 +30,8 @@ dependencies {
         implementation(kotlin)
     }
 
-    KtxDependencies.run {
-        implementation(coreKtx)
+    KTXDependencies.run {
+        implementation(coreKTX)
     }
 
     AndroidXDependencies.run {
@@ -43,5 +43,12 @@ dependencies {
         implementation(jUnit)
         implementation(androidTest)
         implementation(espresso)
+    }
+
+    ThirdPartyDependencies.run {
+        implementation(interceptor)
+        implementation(gson)
+        implementation(retrofit2)
+        implementation(retrofit2Converter)
     }
 }
