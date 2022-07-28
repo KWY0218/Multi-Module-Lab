@@ -6,7 +6,7 @@ object Versions {
     const val materialVersion = "1.6.1"
     const val constraintLayoutVersion = "2.1.4"
     const val jUnitVersion = "4.13.2"
-    const val androidTestVersion = "1.1.13"
+    const val androidTestVersion = "1.1.3"
     const val espressoVersion = "3.4.0"
     const val coilVersion = "2.1.0"
     const val interceptorVersion = "4.10.0"

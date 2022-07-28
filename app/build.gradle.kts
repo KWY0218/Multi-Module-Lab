@@ -76,11 +76,15 @@ dependencies {
     }
 
     KaptDependencies.run {
-        implementation(hiltKapt)
+        kapt(hiltKapt)
     }
 
     ThirdPartyDependencies.run {
         implementation(coil)
         implementation(timber)
+        implementation(interceptor)
+        implementation(gson)
+        implementation(retrofit2)
+        implementation(retrofit2Converter)
     }
 }
