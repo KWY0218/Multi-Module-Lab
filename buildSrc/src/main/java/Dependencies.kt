@@ -1,4 +1,6 @@
-object KotlinDependencies
+object KotlinDependencies {
+    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlinVersion}"
+}
 
 object AndroidXDependencies {
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
