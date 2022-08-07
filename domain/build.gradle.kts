@@ -13,6 +13,9 @@ dependencies {
     KotlinDependencies.run {
         implementation(kotlin)
     }
+    AndroidXDependencies.run {
+        implementation(inject)
+    }
 }
 
 ktlint {
