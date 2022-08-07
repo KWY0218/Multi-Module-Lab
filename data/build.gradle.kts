@@ -28,18 +28,15 @@ android {
 dependencies {
     implementation(project(":domain"))
 
+    hilt()
+
     Dependencies.run {
         implementation(kotlin)
-        implementation(coreKTX)
-        implementation(appCompat)
-        implementation(constraintLayout)
         implementation(jUnit)
         implementation(androidTest)
         implementation(espresso)
-        implementation(interceptor)
         implementation(gson)
         implementation(retrofit2)
-        implementation(retrofit2Converter)
     }
 }
 

@@ -13,7 +13,7 @@ import javax.inject.Singleton
 object RepositoryModule {
     @Provides
     @Singleton
-    fun provideUserLocalDataSource(
+    fun provideRepository(
         impl: RepositoryImpl
     ): Repository = impl
 }
