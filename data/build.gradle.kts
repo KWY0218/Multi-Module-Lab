@@ -28,26 +28,14 @@ android {
 dependencies {
     implementation(project(":domain"))
 
-    KotlinDependencies.run {
+    Dependencies.run {
         implementation(kotlin)
-    }
-
-    KTXDependencies.run {
         implementation(coreKTX)
-    }
-
-    AndroidXDependencies.run {
         implementation(appCompat)
         implementation(constraintLayout)
-    }
-
-    TestDependencies.run {
         implementation(jUnit)
         implementation(androidTest)
         implementation(espresso)
-    }
-
-    ThirdPartyDependencies.run {
         implementation(interceptor)
         implementation(gson)
         implementation(retrofit2)

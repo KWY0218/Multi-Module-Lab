@@ -48,39 +48,21 @@ dependencies {
     implementation(project(":data"))
     implementation(project(":domain"))
 
-    KotlinDependencies.run {
+    hilt()
+
+    Dependencies.run {
         implementation(kotlin)
         implementation(coroutine)
-    }
-
-    KTXDependencies.run {
         implementation(coreKTX)
         implementation(activityKTX)
         implementation(fragmentKTX)
         implementation(lifecycleKTX)
-    }
-
-    AndroidXDependencies.run {
         implementation(appCompat)
         implementation(constraintLayout)
-        implementation(hilt)
-    }
-
-    MaterialDependencies.run {
         implementation(material)
-    }
-
-    TestDependencies.run {
         implementation(jUnit)
         implementation(androidTest)
         implementation(espresso)
-    }
-
-    KaptDependencies.run {
-        kapt(hiltKapt)
-    }
-
-    ThirdPartyDependencies.run {
         implementation(coil)
         implementation(timber)
         implementation(interceptor)

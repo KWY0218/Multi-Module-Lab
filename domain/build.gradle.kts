@@ -10,10 +10,8 @@ java {
 }
 
 dependencies {
-    KotlinDependencies.run {
+    Dependencies.run {
         implementation(kotlin)
-    }
-    AndroidXDependencies.run {
         implementation(inject)
     }
 }
