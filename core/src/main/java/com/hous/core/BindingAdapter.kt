@@ -1,4 +1,4 @@
-package com.hous.multi_module.util
+package com.hous.core
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
